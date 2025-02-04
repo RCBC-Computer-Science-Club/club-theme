@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div class="d-flex flex-column align-items-center" style="margin-top: 100px">
+  <div class="text-left">{{.Content }}</div>
+</div>
+<div class="row my-5">
+  <div class="col-md-6">
+    <a class="link-card-link" href="/events">
+      <div class="link-card mb-3">
+        <div class="link-card-header">
+          <h4>Events</h4>
+        </div>
+        <div class="link-card-content">
+          <p>View upcoming, current, and past events.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-md-6">
+    <a class="link-card-link" href="/guides">
+      <div class="link-card mb-3">
+        <div class="link-card-header">
+          <h4>Guides</h4>
+        </div>
+        <div class="link-card-content">
+          <p>View guides created by the club.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-md-6">
+    <a class="link-card-link" href="/resources">
+      <div class="link-card mb-3">
+        <div class="link-card-header">
+          <h4>Resources</h4>
+        </div>
+        <div class="link-card-content">
+          <p>View resources certified by the club.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+{{ end }}

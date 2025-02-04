@@ -1,0 +1,23 @@
+{{ with site.Menus.main }}
+
+<div id="nav-border" class="container">
+  <nav class="navbar navbar-expand-lg gap-2 py-3">
+    <!-- <h6 class="navbar-brand me-3">{{ site.Title }}</h6> -->
+    {{ range . }} {{ if $.IsMenuCurrent .Menu . }}
+    <div class="nav-item">
+      <a class="active" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
+    </div>
+    {{ else }}
+    <div class="nav-item">
+      <a href="{{ .URL }}">{{ .Name }}</a>
+    </div>
+    {{ end }} {{ end }}
+    <div class="nav-item ms-auto d-flex align-items-center">
+      <a href="https://github.com/RCBC-Computer-Science-Club/website">
+        <i class="fab fa-github" style="font-size: 1.5rem"></i
+      ></a>
+    </div>
+  </nav>
+</div>
+
+{{ end }}
