@@ -1,43 +1,145 @@
 {{ define "main" }}
 <div class="d-flex flex-column align-items-center" style="margin-top: 100px">
-  <div class="text-left">{{.Content }}</div>
+  <div class="text-center">
+    {{.Content }}
+    <p>
+      Welcome to our club page! We are a group of students who are passionate
+      about computer science. We meet every week to discuss new topics in
+      computer science and to work on projects. We are always looking for new
+      members, so if you are interested in joining, please contact us!
+    </p>
+  </div>
 </div>
-<div class="row my-5">
-  <div class="col-md-6">
-    <a class="link-card-link" href="/events">
-      <div class="link-card mb-3">
-        <div class="link-card-header">
-          <h4>Events</h4>
+<div id="involved-wrapper" class="my-5">
+  <h2>Get Involved</h2>
+  <small>Interested in what we do? Join us in these areas.</small>
+  <hr />
+  <div class="row mt-3 p-2">
+    <div class="col-md-4">
+      <a class="link-card-link" href="/join">
+        <div class="link-card mb-3">
+          <div class="link-card-header">
+            <h5>Join</h5>
+          </div>
+          <div class="link-card-content">
+            <p>Interested in our club? See how you can join us.</p>
+          </div>
         </div>
-        <div class="link-card-content">
-          <p>View upcoming, current, and past events.</p>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a class="link-card-link" href="/events">
+        <div class="link-card mb-3">
+          <div class="link-card-header">
+            <h5>Events</h5>
+          </div>
+          <div class="link-card-content">
+            <p>
+              Check out any upcoming, current, and previous events held by our
+              club.
+            </p>
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a class="link-card-link" href="/challenges">
+        <div class="link-card mb-3">
+          <div class="link-card-header">
+            <h5>Challenges</h5>
+          </div>
+          <div class="link-card-content">
+            <p>Try and solve these coding challenges curated by our club.</p>
+          </div>
+        </div>
+      </a>
+    </div>
   </div>
-  <div class="col-md-6">
-    <a class="link-card-link" href="/guides">
-      <div class="link-card mb-3">
-        <div class="link-card-header">
-          <h4>Guides</h4>
+</div>
+<div id="articles-wrapper" class="my-5">
+  <h2>Articles</h2>
+  <small>Check out what our club writes about.</small>
+  <hr />
+  <div class="row mt-3 p-2">
+    <div class="col-md-4">
+      <a class="link-card-link" href="/blog">
+        <div class="link-card mb-3">
+          <div class="link-card-header">
+            <h5>Blog</h5>
+          </div>
+          <div class="link-card-content">
+            <p>View the clubs blog posts about things we find interesting.</p>
+          </div>
         </div>
-        <div class="link-card-content">
-          <p>View guides created by the club.</p>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a class="link-card-link" href="/guides">
+        <div class="link-card mb-3">
+          <div class="link-card-header">
+            <h5>Guides</h5>
+          </div>
+          <div class="link-card-content">
+            <p>
+              View guides created by the club that cover all sorts of topics,
+              such as technologies or getting started on something new.
+            </p>
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
   </div>
-  <div class="col-md-6">
-    <a class="link-card-link" href="/resources">
-      <div class="link-card mb-3">
-        <div class="link-card-header">
-          <h4>Resources</h4>
+</div>
+<div id="resources-wrapper" class="my-5">
+  <h2>Resources</h2>
+  <small>Check out these resources certified and used by our club.</small>
+  <hr />
+  <div class="row mt-3 p-2">
+    <div class="col-md-4">
+      <a class="link-card-link" href="/websites">
+        <div class="link-card mb-3">
+          <div class="link-card-header">
+            <h5>Websites</h5>
+          </div>
+          <div class="link-card-content">
+            <p>
+              View commonly used and helpful websites that will help you learn
+              foundations.
+            </p>
+          </div>
         </div>
-        <div class="link-card-content">
-          <p>View resources certified by the club.</p>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a class="link-card-link" href="/snippets">
+        <div class="link-card mb-3">
+          <div class="link-card-header">
+            <h5>Snippets</h5>
+          </div>
+          <div class="link-card-content">
+            <p>
+              View helpful or niche code snippets that help you understand
+              concepts.
+            </p>
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a class="link-card-link" href="/videos">
+        <div class="link-card mb-3">
+          <div class="link-card-header">
+            <h5>Videos</h5>
+          </div>
+          <div class="link-card-content">
+            <p>
+              Browse helpful videos and playlists that help you learn new topics
+              and apply them.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
   </div>
 </div>
 {{ end }}

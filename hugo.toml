@@ -3,19 +3,152 @@ languageCode = 'en-US'
 title = 'My New Hugo Site'
 
 [[menus.main]]
-name = 'Home'
-pageRef = '/'
-weight = 10
-
-[[menus.main]]
-name = 'Posts'
-pageRef = '/posts'
+identifier = "club"
+name = 'Club'
+url = '/club/'
 weight = 20
 
 [[menus.main]]
-name = 'Tags'
-pageRef = '/tags'
+identifier = "join"
+name = 'Join'
+url = '/join/'
+parent = "club"
+weight = 21
+
+[[menus.main]]
+identifier = "events"
+name = 'Events'
+url = '/events/'
+parent = "club"
+weight = 22
+
+[[menus.main]]
+identifier = "challenges"
+name = 'Challenges'
+url = '/challenges/'
+parent = "club"
+weight = 23
+
+[[menus.main]]
+identifier = "articles"
+name = 'Articles'
+url = '/articles/'
 weight = 30
+
+[[menus.main]]
+identifier = "blog"
+name = 'Blog'
+url = '/blog/'
+parent = "articles"
+weight = 31
+
+[[menus.main]]
+identifier = "guides"
+name = 'Guides'
+url = '/guides/'
+parent = "articles"
+weight = 32
+
+[[menus.main]]
+identifier = "resources"
+name = 'Resources'
+url = '/resources/'
+weight = 40
+
+[[menus.main]]
+identifier = "websites"
+name = 'Websites'
+url = '/websites/'
+parent = "resources"
+weight = 41
+
+[[menus.main]]
+identifier = "snippets"
+name = 'Snippets'
+url = '/snippets/'
+parent = "resources"
+weight = 42
+
+[[menus.main]]
+identifier = "videos"
+name = 'Videos'
+url = '/videos/'
+parent = "resources"
+weight = 43
+
+[[menus.footer]]
+identifier = "official-links"
+name = 'Official Links'
+url = '/official-links/'
+weight = 10
+
+[[menus.footer]]
+identifier = "campus-website"
+name = 'Campus Website'
+url = '/campus-website/'
+parent = "official-links"
+weight = 11
+
+[[menus.footer]]
+identifier = "clubs"
+name = 'Clubs'
+url = '/clubs/'
+parent = "official-links"
+weight = 12
+
+[[menus.footer]]
+identifier = "quick-links"
+name = 'Quick Links'
+url = '/quick-links/'
+weight = 20
+
+[[menus.footer]]
+identifier = "events"
+name = 'Events'
+url = '/events/'
+parent = "quick-links"
+weight = 21
+
+[[menus.footer]]
+identifier = "challenges"
+name = 'Challenges'
+url = '/challenges/'
+parent = "quick-links"
+weight = 22
+
+[[menus.footer]]
+identifier = "articles"
+name = 'Articles'
+url = '/articles/'
+parent = "quick-links"
+weight = 23
+
+[[menus.footer]]
+identifier = "social-media"
+name = 'Social Media'
+url = '/social-media/'
+weight = 30
+
+[[menus.footer]]
+identifier = "instagram"
+name = 'Instagram'
+url = '/instagram/'
+parent = "social-media"
+weight = 31
+
+[[menus.footer]]
+identifier = "twitter"
+name = 'Twitter'
+url = '/twitter/'
+parent = "social-media"
+weight = 32
+
+[[menus.footer]]
+identifier = "youtube"
+name = 'YouTube'
+url = '/youtube/'
+parent = "social-media"
+weight = 33
 
 [module]
   [module.hugoVersion]

@@ -1,14 +1,31 @@
 {{ with site.Menus.main }}
 
 <div id="nav-border" class="container">
-  <nav class="navbar navbar-expand-lg gap-2 py-3">
-    <!-- <h6 class="navbar-brand me-3">{{ site.Title }}</h6> -->
-    {{ range . }} {{ if $.IsMenuCurrent .Menu . }}
-    <div class="nav-item">
-      <a class="active" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
+  <nav class="navbar navbar-expand-lg py-3">
+    <a class="navbar-brand" href="/">
+      <img src="{{ "/computer_science_club_oneline_black.png" | relURL }}"
+      alt="computer science club logo" style="height: 50px" />
+    </a>
+    {{ range . }} {{ if .HasChildren }}
+    <div class="nav-item dropdown">
+      <a href="{{ .URL }}">
+        <button
+          class="btn btn-dropdown dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          {{ .Name }}
+        </button>
+      </a>
+      <div class="dropdown-menu">
+        {{ range .Children }}
+        <a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+      </div>
     </div>
     {{ else }}
-    <div class="nav-item">
+    <div class="nav-item px-2">
       <a href="{{ .URL }}">{{ .Name }}</a>
     </div>
     {{ end }} {{ end }}
