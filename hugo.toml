@@ -1,6 +1,11 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-US'
 title = 'My New Hugo Site'
+[params]
+  imageDir = ''
+  navImage = 'computer_science_club_oneline_black.png'
+  footerTitle = 'Our Mission'
+  footerDescription = 'The Computer Science Club is focused on providing opportunities for students to learn about computer science and technology.'
 
 [[menus.main]]
 identifier = "club"
@@ -149,6 +154,101 @@ name = 'YouTube'
 url = '/youtube/'
 parent = "social-media"
 weight = 33
+
+[[menus.home]]
+identifier = "get-involved"
+name = 'Get Involved'
+weight = 10
+[[menus.home.params]]
+  description = 'Interested in what we do? Join us in these areas.'
+
+[[menus.home]]
+identifier = "join"
+name = 'Join'
+url = '/join/'
+parent = "get-involved"
+weight = 11
+[[menus.home.params]]
+  description = 'Interested in our club? See how you can join us.'
+
+[[menus.home]]
+identifier = "events"
+name = 'Events'
+url = '/events/'
+parent = "get-involved"
+weight = 12
+[[menus.home.params]]
+  description = 'Check out any upcoming, current, and previous events held by our club.'
+
+[[menus.home]]
+identifier = "challenges"
+name = 'Challenges'
+url = '/challenges/'
+parent = "get-involved"
+weight = 12
+[[menus.home.params]]
+  description = 'Try and solve these coding challenges curated by our club.'
+
+[[menus.home]]
+identifier = "articles"
+name = 'Articles'
+url = '/articles/'
+weight = 20
+[[menus.home.params]]
+  description = 'Check out what our club writes about.'
+
+[[menus.home]]
+identifier = "blog"
+name = 'Blog'
+url = '/blog/'
+parent = "articles"
+weight = 21
+[[menus.home.params]]
+  description = 'View the clubs blog posts about things we find interesting.'
+
+[[menus.home]]
+identifier = "guides"
+name = 'Guides'
+url = '/guides/'
+parent = "articles"
+weight = 22
+[[menus.home.params]]
+  description = 'View guides created by the club that cover all sorts of topics, such as technologies or getting started on something new.'
+
+[[menus.home]]
+identifier = "resources"
+name = 'Resources'
+url = '/resources/'
+weight = 30
+[[menus.home.params]]
+  description = 'Check out these resources certified and used by our club.'
+
+[[menus.home]]
+identifier = "websites"
+name = 'Websites'
+url = '/websites/'
+parent = "resources"
+weight = 31
+[[menus.home.params]]
+  description = 'View commonly used and helpful websites that will help you learn foundations.'
+
+[[menus.home]]
+identifier = "snippets"
+name = 'Snippets'
+url = '/snippets/'
+parent = "resources"
+weight = 32
+[[menus.home.params]]
+  description = 'View helpful or niche code snippets that help you understand concepts.'
+
+[[menus.home]]
+identifier = "videos"
+name = 'Videos'
+url = '/videos/'
+parent = "resources"
+weight = 33
+[[menus.home.params]]
+  description = 'Browse helpful videos and playlists that help you learn new topics and apply them.'
 
 [module]
   [module.hugoVersion]

@@ -318,9 +318,7 @@ h6 {
   color: var(--text-muted);
 }
 
-#involved-wrapper,
-#articles-wrapper,
-#resources-wrapper {
+#home-section-wrapper {
   h2 {
     margin: 0;
   }

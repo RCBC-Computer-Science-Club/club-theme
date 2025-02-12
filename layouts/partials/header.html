@@ -1,10 +1,10 @@
+{{ $imageDir := .Site.Params.imageDir }}
+{{ $navImage := .Site.Params.navImage }}
 {{ with site.Menus.main }}
-
 <div id="nav-border" class="container">
   <nav class="navbar navbar-expand-lg py-3">
     <a class="navbar-brand" href="/">
-      <img src="{{ "/computer_science_club_oneline_black.png" | relURL }}"
-      alt="computer science club logo" style="height: 50px" />
+      <img src="{{ printf "%s/%s" $imageDir $navImage | relURL }}" alt="computer science club logo" style="height: 50px" />
     </a>
     {{ range . }} {{ if .HasChildren }}
     <div class="nav-item dropdown">
@@ -36,5 +36,4 @@
     </div>
   </nav>
 </div>
-
 {{ end }}

@@ -5,3 +5,5 @@ draft = false
 +++
 
 # RCBC Computer Science Club
+
+Welcome to our club page! We are a group of students who are passionate about computer science. We meet every week to discuss new topics in computer science and to work on projects. We are always looking for new members, so if you are interested in joining, please contact us!
